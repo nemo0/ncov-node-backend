@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 // Server Setup
-const port = process.env.PORT || 8000;
-app.listen(5000, () => {
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
   console.log(`Server running a port ${port} in ${process.env.NODE_ENV} mode`);
 });
