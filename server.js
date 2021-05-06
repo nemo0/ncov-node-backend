@@ -18,6 +18,12 @@ app.use('/api/v1/ambulance-hospitals', require('./routes/ambulance'));
 app.use('/api/v1/ngos', require('./routes/ngos'));
 app.use('/api/v1/other', require('./routes/other'));
 
+app.get('/', (req, res) => {
+  res.json({
+    data: "You've reached the API",
+  });
+});
+
 // Server Setup
 const port = process.env.PORT || 8000;
 app.listen(5000, () => {
